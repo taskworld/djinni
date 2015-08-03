@@ -109,7 +109,7 @@ class JavaGenerator(spec: Spec) extends Generator(spec) {
       writeDoc(w, doc)
       javaAnnotationHeader.foreach(w.wl)
       w.w(s"public enum ${marshal.typename(ident, e)}").braced {
-        for (o <- e.options) {
+        for (o <- normalEnumOptions(e)) {
           writeDoc(w, o.doc)
           w.wl(idJava.enum(o.ident) + ",")
         }
