@@ -66,7 +66,7 @@ class CppGenerator(spec: Spec) extends Generator(spec) {
       }
     },
     w => {
-      // std::hash specialization has to go *outside* of the wrapNs
+      // std::hash specialization has to go *outside* of the wraps
       if (spec.cppEnumHashWorkaround) {
         val fqSelf = marshal.fqTypename(ident, e)
         w.wl
@@ -175,9 +175,9 @@ class CppGenerator(spec: Spec) extends Generator(spec) {
         // Constructor.
         if(r.fields.nonEmpty) {
           w.wl
-          writeAlignedCall(w, actualSelf + "(", r.fields, ")", f => marshal.fieldType(f.ty) + " " + idCpp.local(f.ident))
+          writeAlignedCall(w, actualSelf + "(", r.fields, ")", f => marshal.fieldType(f.ty) + " _" + idCpp.local(f.ident))
           w.wl
-          val init = (f: Field) => idCpp.field(f.ident) + "(std::move(" + idCpp.local(f.ident) + "))"
+          val init = (f: Field) => idCpp.field(f.ident) + "(std::move(_" + idCpp.local(f.ident) + "))"
           w.wl(": " + init(r.fields.head))
           r.fields.tail.map(f => ", " + init(f)).foreach(w.wl)
           w.wl("{}")

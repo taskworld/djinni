@@ -10,7 +10,7 @@
 struct PrimitiveList final {
     std::vector<int64_t> list;
 
-    PrimitiveList(std::vector<int64_t> list)
-    : list(std::move(list))
+    PrimitiveList(std::vector<int64_t> _list)
+    : list(std::move(_list))
     {}
 };

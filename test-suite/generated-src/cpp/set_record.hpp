@@ -12,9 +12,9 @@ struct SetRecord final {
     std::unordered_set<std::string> set;
     std::unordered_set<int32_t> iset;
 
-    SetRecord(std::unordered_set<std::string> set,
-              std::unordered_set<int32_t> iset)
-    : set(std::move(set))
-    , iset(std::move(iset))
+    SetRecord(std::unordered_set<std::string> _set,
+              std::unordered_set<int32_t> _iset)
+    : set(std::move(_set))
+    , iset(std::move(_iset))
     {}
 };
