@@ -18,7 +18,7 @@ struct RecordWithDurationAndDerivings final {
     friend bool operator<=(const RecordWithDurationAndDerivings& lhs, const RecordWithDurationAndDerivings& rhs);
     friend bool operator>=(const RecordWithDurationAndDerivings& lhs, const RecordWithDurationAndDerivings& rhs);
 
-    RecordWithDurationAndDerivings(std::chrono::duration<double, std::nano> dt)
-    : dt(std::move(dt))
+    RecordWithDurationAndDerivings(std::chrono::duration<double, std::nano> _dt)
+    : dt(std::move(_dt))
     {}
 };
