@@ -21,9 +21,9 @@ struct ExternRecordWithDerivings final {
     friend bool operator<=(const ExternRecordWithDerivings& lhs, const ExternRecordWithDerivings& rhs);
     friend bool operator>=(const ExternRecordWithDerivings& lhs, const ExternRecordWithDerivings& rhs);
 
-    ExternRecordWithDerivings(::RecordWithDerivings _member,
-                              ::color _e)
-    : member(std::move(_member))
-    , e(std::move(_e))
+    ExternRecordWithDerivings(::RecordWithDerivings new_member,
+                              ::color new_e)
+    : member(std::move(new_member))
+    , e(std::move(new_e))
     {}
 };
