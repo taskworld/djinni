@@ -51,7 +51,7 @@ public final class RecordWithNestedDerivings implements Comparable<RecordWithNes
     @Override
     public String toString() {
         return "RecordWithNestedDerivings{" +
-                "," + "mKey=" + mKey +
+                "mKey=" + mKey +
                 "," + "mRec=" + mRec +
         "}";
     }

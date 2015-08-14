@@ -26,7 +26,7 @@ public final class MapListRecord {
     @Override
     public String toString() {
         return "MapListRecord{" +
-                "," + "mMapList=" + mMapList +
+                "mMapList=" + mMapList +
         "}";
     }
 

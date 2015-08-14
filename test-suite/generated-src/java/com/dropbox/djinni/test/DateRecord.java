@@ -41,7 +41,7 @@ public final class DateRecord implements Comparable<DateRecord> {
     @Override
     public String toString() {
         return "DateRecord{" +
-                "," + "mCreatedAt=" + mCreatedAt +
+                "mCreatedAt=" + mCreatedAt +
         "}";
     }
 

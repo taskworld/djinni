@@ -34,7 +34,7 @@ public final class SetRecord {
     @Override
     public String toString() {
         return "SetRecord{" +
-                "," + "mSet=" + mSet +
+                "mSet=" + mSet +
                 "," + "mIset=" + mIset +
         "}";
     }

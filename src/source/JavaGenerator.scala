@@ -346,8 +346,9 @@ class JavaGenerator(spec: Spec) extends Generator(spec) {
         w.w("public String toString()").braced {
           w.w(s"return ").nestedN(2) {
             w.wl(s"\042${self}{\042 +")
-            for (f <- r.fields) {
-              w.wl(s"\042,\042 + \042${idJava.field(f.ident)}=\042 + ${idJava.field(f.ident)} +")
+            for (i <- 0 to r.fields.length-1) {
+              val name = idJava.field(r.fields(i).ident)
+              w.wl(s"${if (i > 0) s"\042,\042 + " else ""}\042${name}=\042 + ${name} +")
             }
           }
           w.wl(s"\042}\042;")

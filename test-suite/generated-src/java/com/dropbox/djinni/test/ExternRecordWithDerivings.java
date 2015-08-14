@@ -48,7 +48,7 @@ public final class ExternRecordWithDerivings implements Comparable<ExternRecordW
     @Override
     public String toString() {
         return "ExternRecordWithDerivings{" +
-                "," + "mMember=" + mMember +
+                "mMember=" + mMember +
                 "," + "mE=" + mE +
         "}";
     }

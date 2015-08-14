@@ -26,7 +26,7 @@ public final class NestedCollection {
     @Override
     public String toString() {
         return "NestedCollection{" +
-                "," + "mSetList=" + mSetList +
+                "mSetList=" + mSetList +
         "}";
     }
 

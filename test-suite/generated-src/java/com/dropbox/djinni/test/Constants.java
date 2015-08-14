@@ -57,7 +57,7 @@ public final class Constants {
     @Override
     public String toString() {
         return "Constants{" +
-                "," + "mSomeInteger=" + mSomeInteger +
+                "mSomeInteger=" + mSomeInteger +
                 "," + "mSomeString=" + mSomeString +
         "}";
     }
