@@ -53,4 +53,13 @@ public final class Constants {
     public String getSomeString() {
         return mSomeString;
     }
+
+    @Override
+    public String toString() {
+        return "Constants{" +
+                "," + "mSomeInteger=" + mSomeInteger +
+                "," + "mSomeString=" + mSomeString +
+        "}";
+    }
+
 }
