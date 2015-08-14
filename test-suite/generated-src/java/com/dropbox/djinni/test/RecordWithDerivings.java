@@ -51,7 +51,7 @@ public final class RecordWithDerivings implements Comparable<RecordWithDerivings
     @Override
     public String toString() {
         return "RecordWithDerivings{" +
-                "," + "mKey1=" + mKey1 +
+                "mKey1=" + mKey1 +
                 "," + "mKey2=" + mKey2 +
         "}";
     }

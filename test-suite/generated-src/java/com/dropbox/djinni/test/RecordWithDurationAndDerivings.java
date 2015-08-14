@@ -41,7 +41,7 @@ public final class RecordWithDurationAndDerivings implements Comparable<RecordWi
     @Override
     public String toString() {
         return "RecordWithDurationAndDerivings{" +
-                "," + "mDt=" + mDt +
+                "mDt=" + mDt +
         "}";
     }
 

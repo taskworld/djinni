@@ -41,7 +41,7 @@ public final class ClientReturnedRecord {
     @Override
     public String toString() {
         return "ClientReturnedRecord{" +
-                "," + "mRecordId=" + mRecordId +
+                "mRecordId=" + mRecordId +
                 "," + "mContent=" + mContent +
                 "," + "mMisc=" + mMisc +
         "}";

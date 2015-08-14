@@ -34,7 +34,7 @@ public final class MapRecord {
     @Override
     public String toString() {
         return "MapRecord{" +
-                "," + "mMap=" + mMap +
+                "mMap=" + mMap +
                 "," + "mImap=" + mImap +
         "}";
     }

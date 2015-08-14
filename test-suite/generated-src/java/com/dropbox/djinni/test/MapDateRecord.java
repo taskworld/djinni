@@ -25,7 +25,7 @@ public final class MapDateRecord {
     @Override
     public String toString() {
         return "MapDateRecord{" +
-                "," + "mDatesById=" + mDatesById +
+                "mDatesById=" + mDatesById +
         "}";
     }
 

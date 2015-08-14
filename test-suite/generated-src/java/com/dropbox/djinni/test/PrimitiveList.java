@@ -25,7 +25,7 @@ public final class PrimitiveList {
     @Override
     public String toString() {
         return "PrimitiveList{" +
-                "," + "mList=" + mList +
+                "mList=" + mList +
         "}";
     }
 

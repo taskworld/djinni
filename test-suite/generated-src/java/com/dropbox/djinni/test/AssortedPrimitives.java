@@ -177,7 +177,7 @@ public final class AssortedPrimitives {
     @Override
     public String toString() {
         return "AssortedPrimitives{" +
-                "," + "mB=" + mB +
+                "mB=" + mB +
                 "," + "mEight=" + mEight +
                 "," + "mSixteen=" + mSixteen +
                 "," + "mThirtytwo=" + mThirtytwo +
