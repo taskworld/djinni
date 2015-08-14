@@ -21,7 +21,7 @@
 
 - (NSString *)debugDescription
 {
-    return [NSString stringWithFormat:@"<%@ %p %@>", self.class, self, self.list];
+    return [NSString stringWithFormat:@"<%@ %p list:%@>", self.class, self, self.list];
 }
 
 @end

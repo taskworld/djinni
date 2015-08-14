@@ -21,7 +21,7 @@
 
 - (NSString *)debugDescription
 {
-    return [NSString stringWithFormat:@"<%@ %p %@>", self.class, self, self.datesById];
+    return [NSString stringWithFormat:@"<%@ %p datesById:%@>", self.class, self, self.datesById];
 }
 
 @end
