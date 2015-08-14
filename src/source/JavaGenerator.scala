@@ -340,6 +340,19 @@ class JavaGenerator(spec: Spec) extends Generator(spec) {
 
         }
 
+        w.wl
+        w.wl("@Override")
+        w.w("public String toString()").braced {
+          w.w(s"return ").nestedN(2) {
+            w.wl(s"\042${self}{\042 +")
+            for (f <- r.fields) {
+              w.wl(s"\042,\042 + \042${idJava.field(f.ident)}=\042 + ${idJava.field(f.ident)} +")
+            }
+          }
+          w.wl(s"\042}\042;")
+        }
+        w.wl
+
         if (r.derivingTypes.contains(DerivingType.Ord)) {
           def primitiveCompare(ident: Ident) {
             w.wl(s"if (this.${idJava.field(ident)} < other.${idJava.field(ident)}) {").nested {
