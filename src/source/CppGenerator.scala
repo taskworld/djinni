@@ -66,7 +66,7 @@ class CppGenerator(spec: Spec) extends Generator(spec) {
       }
     },
     w => {
-      // std::hash specialization has to go *outside* of the wrapNs
+      // std::hash specialization has to go *outside* of the wraps
       if (spec.cppEnumHashWorkaround) {
         val fqSelf = marshal.fqTypename(ident, e)
         w.wl
