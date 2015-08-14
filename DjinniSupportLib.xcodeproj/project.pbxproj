@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E6E7D7851AC40EE200EAA7F7 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E6E7D7861AC40EE200EAA7F7 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				E6E7D78A1AC40EF300EAA7F7 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		192927301B57C7CB00C5FF41 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1929272B1B57C7CB00C5FF41 /* DJIError.mm */; };
+		192927311B57C7CB00C5FF41 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1929272B1B57C7CB00C5FF41 /* DJIError.mm */; };
+		192927321B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1929272E1B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm */; };
+		192927331B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1929272E1B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E7D7891AC40EF300EAA7F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E7D7291AC40CCF00EAA7F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E7D7301AC40CCF00EAA7F7;
+			remoteInfo = DjinniSupportLibObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4366EF091AFCF77000576BE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E7D72F1AC40CCF00EAA7F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		192927291B57C7CB00C5FF41 /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJICppWrapperCache+Private.h"; path = "support-lib/objc/DJICppWrapperCache+Private.h"; sourceTree = SOURCE_ROOT; };
+		1929272A1B57C7CB00C5FF41 /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJIError.h; path = "support-lib/objc/DJIError.h"; sourceTree = SOURCE_ROOT; };
+		1929272B1B57C7CB00C5FF41 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIError.mm; path = "support-lib/objc/DJIError.mm"; sourceTree = SOURCE_ROOT; };
+		1929272C1B57C7CB00C5FF41 /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIMarshal+Private.h"; path = "support-lib/objc/DJIMarshal+Private.h"; sourceTree = SOURCE_ROOT; };
+		1929272D1B57C7CB00C5FF41 /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIObjcWrapperCache+Private.h"; path = "support-lib/objc/DJIObjcWrapperCache+Private.h"; sourceTree = SOURCE_ROOT; };
+		1929272E1B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIWeakPtrWrapper.mm; path = "support-lib/objc/DJIWeakPtrWrapper.mm"; sourceTree = SOURCE_ROOT; };
+		1929272F1B57C7CB00C5FF41 /* DJIWeakPtrWrapper+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIWeakPtrWrapper+Private.h"; path = "support-lib/objc/DJIWeakPtrWrapper+Private.h"; sourceTree = SOURCE_ROOT; };
+		4366EF0D1AFCF77000576BE5 /* libDjinniSupportLibObjC-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDjinniSupportLibObjC-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E7D7311AC40CCF00EAA7F7 /* libDjinniSupportLibObjC-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDjinniSupportLibObjC-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4366EF081AFCF77000576BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E7D72E1AC40CCF00EAA7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6D2DC101ACEF62E005EE6AE /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				192927291B57C7CB00C5FF41 /* DJICppWrapperCache+Private.h */,
+				1929272A1B57C7CB00C5FF41 /* DJIError.h */,
+				1929272B1B57C7CB00C5FF41 /* DJIError.mm */,
+				1929272C1B57C7CB00C5FF41 /* DJIMarshal+Private.h */,
+				1929272D1B57C7CB00C5FF41 /* DJIObjcWrapperCache+Private.h */,
+				1929272E1B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm */,
+				1929272F1B57C7CB00C5FF41 /* DJIWeakPtrWrapper+Private.h */,
+			);
+			name = objc;
+			path = "../../../Vendor/djinni/support-lib/objc";
+			sourceTree = "<group>";
+		};
+		E6E7D7281AC40CCF00EAA7F7 = {
+			isa = PBXGroup;
+			children = (
+				E6D2DC101ACEF62E005EE6AE /* objc */,
+				E6E7D7321AC40CCF00EAA7F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6E7D7321AC40CCF00EAA7F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7D7311AC40CCF00EAA7F7 /* libDjinniSupportLibObjC-iOS.a */,
+				4366EF0D1AFCF77000576BE5 /* libDjinniSupportLibObjC-mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4366EF041AFCF77000576BE5 /* DjinniSupportLibObjC-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4366EF0A1AFCF77000576BE5 /* Build configuration list for PBXNativeTarget "DjinniSupportLibObjC-mac" */;
+			buildPhases = (
+				4366EF051AFCF77000576BE5 /* Sources */,
+				4366EF081AFCF77000576BE5 /* Frameworks */,
+				4366EF091AFCF77000576BE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DjinniSupportLibObjC-mac";
+			productName = DjinniSupportLib;
+			productReference = 4366EF0D1AFCF77000576BE5 /* libDjinniSupportLibObjC-mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E6E7D7301AC40CCF00EAA7F7 /* DjinniSupportLibObjC-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E7D7451AC40CCF00EAA7F7 /* Build configuration list for PBXNativeTarget "DjinniSupportLibObjC-iOS" */;
+			buildPhases = (
+				E6E7D72D1AC40CCF00EAA7F7 /* Sources */,
+				E6E7D72E1AC40CCF00EAA7F7 /* Frameworks */,
+				E6E7D72F1AC40CCF00EAA7F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DjinniSupportLibObjC-iOS";
+			productName = DjinniSupportLib;
+			productReference = E6E7D7311AC40CCF00EAA7F7 /* libDjinniSupportLibObjC-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6E7D7291AC40CCF00EAA7F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = PSPDFKit;
+				TargetAttributes = {
+					E6E7D7301AC40CCF00EAA7F7 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E6E7D7851AC40EE200EAA7F7 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = E6E7D72C1AC40CCF00EAA7F7 /* Build configuration list for PBXProject "DjinniSupportLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6E7D7281AC40CCF00EAA7F7;
+			productRefGroup = E6E7D7321AC40CCF00EAA7F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6E7D7851AC40EE200EAA7F7 /* All */,
+				E6E7D7301AC40CCF00EAA7F7 /* DjinniSupportLibObjC-iOS */,
+				4366EF041AFCF77000576BE5 /* DjinniSupportLibObjC-mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4366EF051AFCF77000576BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192927331B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm in Sources */,
+				192927311B57C7CB00C5FF41 /* DJIError.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E7D72D1AC40CCF00EAA7F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192927321B57C7CB00C5FF41 /* DJIWeakPtrWrapper.mm in Sources */,
+				192927301B57C7CB00C5FF41 /* DJIError.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6E7D78A1AC40EF300EAA7F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E7D7301AC40CCF00EAA7F7 /* DjinniSupportLibObjC-iOS */;
+			targetProxy = E6E7D7891AC40EF300EAA7F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4366EF0B1AFCF77000576BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "DjinniSupportLibObjC-mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4366EF0C1AFCF77000576BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "DjinniSupportLibObjC-mac";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E6E7D7431AC40CCF00EAA7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6E7D7441AC40CCF00EAA7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6E7D7461AC40CCF00EAA7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "DjinniSupportLibObjC-iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E6E7D7471AC40CCF00EAA7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "DjinniSupportLibObjC-iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E6E7D7871AC40EE200EAA7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6E7D7881AC40EE200EAA7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4366EF0A1AFCF77000576BE5 /* Build configuration list for PBXNativeTarget "DjinniSupportLibObjC-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4366EF0B1AFCF77000576BE5 /* Debug */,
+				4366EF0C1AFCF77000576BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E7D72C1AC40CCF00EAA7F7 /* Build configuration list for PBXProject "DjinniSupportLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E7D7431AC40CCF00EAA7F7 /* Debug */,
+				E6E7D7441AC40CCF00EAA7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E7D7451AC40CCF00EAA7F7 /* Build configuration list for PBXNativeTarget "DjinniSupportLibObjC-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E7D7461AC40CCF00EAA7F7 /* Debug */,
+				E6E7D7471AC40CCF00EAA7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E7D7861AC40EE200EAA7F7 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E7D7871AC40EE200EAA7F7 /* Debug */,
+				E6E7D7881AC40EE200EAA7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6E7D7291AC40CCF00EAA7F7 /* Project object */;
+}
