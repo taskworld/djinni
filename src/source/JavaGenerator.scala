@@ -344,13 +344,14 @@ class JavaGenerator(spec: Spec) extends Generator(spec) {
         w.wl("@Override")
         w.w("public String toString()").braced {
           w.w(s"return ").nestedN(2) {
-            w.wl(s"\042${self}{\042 +")
+            w.wl(s""""${self}{" +""")
             for (i <- 0 to r.fields.length-1) {
               val name = idJava.field(r.fields(i).ident)
-              w.wl(s"${if (i > 0) s"\042,\042 + " else ""}\042${name}=\042 + ${name} +")
+              val comma = if (i > 0) """"," + """ else ""
+              w.wl(s"""${comma}"${name}=" + ${name} +""")
             }
           }
-          w.wl(s"\042}\042;")
+          w.wl(s""""}";""")
         }
         w.wl
 
