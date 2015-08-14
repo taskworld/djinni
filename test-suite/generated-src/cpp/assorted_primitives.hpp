@@ -26,33 +26,33 @@ struct AssortedPrimitives final {
     friend bool operator==(const AssortedPrimitives& lhs, const AssortedPrimitives& rhs);
     friend bool operator!=(const AssortedPrimitives& lhs, const AssortedPrimitives& rhs);
 
-    AssortedPrimitives(bool _b,
-                       int8_t _eight,
-                       int16_t _sixteen,
-                       int32_t _thirtytwo,
-                       int64_t _sixtyfour,
-                       float _fthirtytwo,
-                       double _fsixtyfour,
-                       std::experimental::optional<bool> _o_b,
-                       std::experimental::optional<int8_t> _o_eight,
-                       std::experimental::optional<int16_t> _o_sixteen,
-                       std::experimental::optional<int32_t> _o_thirtytwo,
-                       std::experimental::optional<int64_t> _o_sixtyfour,
-                       std::experimental::optional<float> _o_fthirtytwo,
-                       std::experimental::optional<double> _o_fsixtyfour)
-    : b(std::move(_b))
-    , eight(std::move(_eight))
-    , sixteen(std::move(_sixteen))
-    , thirtytwo(std::move(_thirtytwo))
-    , sixtyfour(std::move(_sixtyfour))
-    , fthirtytwo(std::move(_fthirtytwo))
-    , fsixtyfour(std::move(_fsixtyfour))
-    , o_b(std::move(_o_b))
-    , o_eight(std::move(_o_eight))
-    , o_sixteen(std::move(_o_sixteen))
-    , o_thirtytwo(std::move(_o_thirtytwo))
-    , o_sixtyfour(std::move(_o_sixtyfour))
-    , o_fthirtytwo(std::move(_o_fthirtytwo))
-    , o_fsixtyfour(std::move(_o_fsixtyfour))
+    AssortedPrimitives(bool new_b,
+                       int8_t new_eight,
+                       int16_t new_sixteen,
+                       int32_t new_thirtytwo,
+                       int64_t new_sixtyfour,
+                       float new_fthirtytwo,
+                       double new_fsixtyfour,
+                       std::experimental::optional<bool> new_o_b,
+                       std::experimental::optional<int8_t> new_o_eight,
+                       std::experimental::optional<int16_t> new_o_sixteen,
+                       std::experimental::optional<int32_t> new_o_thirtytwo,
+                       std::experimental::optional<int64_t> new_o_sixtyfour,
+                       std::experimental::optional<float> new_o_fthirtytwo,
+                       std::experimental::optional<double> new_o_fsixtyfour)
+    : b(std::move(new_b))
+    , eight(std::move(new_eight))
+    , sixteen(std::move(new_sixteen))
+    , thirtytwo(std::move(new_thirtytwo))
+    , sixtyfour(std::move(new_sixtyfour))
+    , fthirtytwo(std::move(new_fthirtytwo))
+    , fsixtyfour(std::move(new_fsixtyfour))
+    , o_b(std::move(new_o_b))
+    , o_eight(std::move(new_o_eight))
+    , o_sixteen(std::move(new_o_sixteen))
+    , o_thirtytwo(std::move(new_o_thirtytwo))
+    , o_sixtyfour(std::move(new_o_sixtyfour))
+    , o_fthirtytwo(std::move(new_o_fthirtytwo))
+    , o_fsixtyfour(std::move(new_o_fsixtyfour))
     {}
 };

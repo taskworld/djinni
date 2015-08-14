@@ -12,9 +12,9 @@ struct MapRecord final {
     std::unordered_map<std::string, int64_t> map;
     std::unordered_map<int32_t, int32_t> imap;
 
-    MapRecord(std::unordered_map<std::string, int64_t> _map,
-              std::unordered_map<int32_t, int32_t> _imap)
-    : map(std::move(_map))
-    , imap(std::move(_imap))
+    MapRecord(std::unordered_map<std::string, int64_t> new_map,
+              std::unordered_map<int32_t, int32_t> new_imap)
+    : map(std::move(new_map))
+    , imap(std::move(new_imap))
     {}
 };

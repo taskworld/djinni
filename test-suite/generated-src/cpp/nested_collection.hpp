@@ -11,7 +11,7 @@
 struct NestedCollection final {
     std::vector<std::unordered_set<std::string>> set_list;
 
-    NestedCollection(std::vector<std::unordered_set<std::string>> _set_list)
-    : set_list(std::move(_set_list))
+    NestedCollection(std::vector<std::unordered_set<std::string>> new_set_list)
+    : set_list(std::move(new_set_list))
     {}
 };

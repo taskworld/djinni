@@ -20,9 +20,9 @@ struct RecordWithDerivings final {
     friend bool operator<=(const RecordWithDerivings& lhs, const RecordWithDerivings& rhs);
     friend bool operator>=(const RecordWithDerivings& lhs, const RecordWithDerivings& rhs);
 
-    RecordWithDerivings(int32_t _key1,
-                        std::string _key2)
-    : key1(std::move(_key1))
-    , key2(std::move(_key2))
+    RecordWithDerivings(int32_t new_key1,
+                        std::string new_key2)
+    : key1(std::move(new_key1))
+    , key2(std::move(new_key2))
     {}
 };

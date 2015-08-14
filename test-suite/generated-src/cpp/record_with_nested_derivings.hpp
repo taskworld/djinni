@@ -20,9 +20,9 @@ struct RecordWithNestedDerivings final {
     friend bool operator<=(const RecordWithNestedDerivings& lhs, const RecordWithNestedDerivings& rhs);
     friend bool operator>=(const RecordWithNestedDerivings& lhs, const RecordWithNestedDerivings& rhs);
 
-    RecordWithNestedDerivings(int32_t _key,
-                              RecordWithDerivings _rec)
-    : key(std::move(_key))
-    , rec(std::move(_rec))
+    RecordWithNestedDerivings(int32_t new_key,
+                              RecordWithDerivings new_rec)
+    : key(std::move(new_key))
+    , rec(std::move(new_rec))
     {}
 };

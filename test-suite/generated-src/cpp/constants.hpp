@@ -32,9 +32,9 @@ struct Constants final {
     int32_t some_integer;
     std::string some_string;
 
-    Constants(int32_t _some_integer,
-              std::string _some_string)
-    : some_integer(std::move(_some_integer))
-    , some_string(std::move(_some_string))
+    Constants(int32_t new_some_integer,
+              std::string new_some_string)
+    : some_integer(std::move(new_some_integer))
+    , some_string(std::move(new_some_string))
     {}
 };
