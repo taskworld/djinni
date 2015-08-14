@@ -34,11 +34,6 @@
             ((NSUInteger)self.dt);
 }
 
-- (NSString *)debugDescription
-{
-    return [NSString stringWithFormat:@"<%@ %p %@>", self.class, self, @(self.dt)];
-}
-
 - (NSComparisonResult)compare:(DBRecordWithDurationAndDerivings *)other
 {
     NSComparisonResult tempResult;
@@ -53,6 +48,11 @@
         return tempResult;
     }
     return NSOrderedSame;
+}
+
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p dt:%@>", self.class, self, @(self.dt)];
 }
 
 @end

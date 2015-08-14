@@ -34,11 +34,6 @@
             ((NSUInteger)self.createdAt.timeIntervalSinceReferenceDate);
 }
 
-- (NSString *)debugDescription
-{
-    return [NSString stringWithFormat:@"<%@ %p %@>", self.class, self, self.createdAt];
-}
-
 - (NSComparisonResult)compare:(DBDateRecord *)other
 {
     NSComparisonResult tempResult;
@@ -47,6 +42,11 @@
         return tempResult;
     }
     return NSOrderedSame;
+}
+
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p createdAt:%@>", self.class, self, self.createdAt];
 }
 
 @end
