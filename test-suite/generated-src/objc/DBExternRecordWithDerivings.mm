@@ -40,6 +40,11 @@
             (NSUInteger)self.e;
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@ %@>", self.class, self, self.member, @(self.e)];
+}
+
 - (NSComparisonResult)compare:(DBExternRecordWithDerivings *)other
 {
     NSComparisonResult tempResult;

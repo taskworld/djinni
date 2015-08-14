@@ -34,6 +34,11 @@
             ((NSUInteger)self.createdAt.timeIntervalSinceReferenceDate);
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@>", self.class, self, self.createdAt];
+}
+
 - (NSComparisonResult)compare:(DBDateRecord *)other
 {
     NSComparisonResult tempResult;

@@ -27,4 +27,9 @@
                                      misc:misc];
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@ %@ %@>", self.class, self, @(self.recordId), self.content, self.misc];
+}
+
 @end

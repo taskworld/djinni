@@ -23,4 +23,9 @@
                                 imap:imap];
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@ %@>", self.class, self, self.map, self.imap];
+}
+
 @end

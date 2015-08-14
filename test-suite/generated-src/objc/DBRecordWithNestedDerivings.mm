@@ -40,6 +40,11 @@
             self.rec.hash;
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@ %@>", self.class, self, @(self.key), self.rec];
+}
+
 - (NSComparisonResult)compare:(DBRecordWithNestedDerivings *)other
 {
     NSComparisonResult tempResult;

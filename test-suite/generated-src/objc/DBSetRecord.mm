@@ -23,4 +23,9 @@
                                 iset:iset];
 }
 
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@ %p %@ %@>", self.class, self, self.set, self.iset];
+}
+
 @end
