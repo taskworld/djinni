@@ -386,7 +386,7 @@ class ObjcGenerator(spec: Spec) extends Generator(spec) {
         w.wl
       }
 
-      w.wl("- (NSString *)debugDescription")
+      w.wl("- (NSString *)description")
       w.braced {
         w.w(s"return ").nestedN(2) {
           w.w("[NSString stringWithFormat:@\"<%@ %p")

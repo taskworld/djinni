@@ -18,7 +18,7 @@
     return [[self alloc] init];
 }
 
-- (NSString *)debugDescription
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"<%@ %p>", self.class, self];
 }

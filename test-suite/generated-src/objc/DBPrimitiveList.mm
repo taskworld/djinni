@@ -19,7 +19,7 @@
     return [[self alloc] initWithList:list];
 }
 
-- (NSString *)debugDescription
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"<%@ %p list:%@>", self.class, self, self.list];
 }

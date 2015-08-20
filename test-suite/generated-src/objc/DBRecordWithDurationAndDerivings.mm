@@ -50,7 +50,7 @@
     return NSOrderedSame;
 }
 
-- (NSString *)debugDescription
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"<%@ %p dt:%@>", self.class, self, @(self.dt)];
 }
