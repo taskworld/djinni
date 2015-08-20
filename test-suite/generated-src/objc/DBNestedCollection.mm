@@ -19,7 +19,7 @@
     return [[self alloc] initWithSetList:setList];
 }
 
-- (NSString *)debugDescription
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"<%@ %p setList:%@>", self.class, self, self.setList];
 }

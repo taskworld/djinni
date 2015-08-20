@@ -19,7 +19,7 @@
     return [[self alloc] initWithMapList:mapList];
 }
 
-- (NSString *)debugDescription
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"<%@ %p mapList:%@>", self.class, self, self.mapList];
 }
