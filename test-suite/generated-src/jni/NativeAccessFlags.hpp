@@ -10,7 +10,7 @@ namespace djinni_generated {
 
 class NativeAccessFlags final : ::djinni::JniFlags {
 public:
-    using CppType = ::access_flags;
+    using CppType = ::testsuite::access_flags;
     using JniType = jobject;
 
     using Boxed = NativeAccessFlags;

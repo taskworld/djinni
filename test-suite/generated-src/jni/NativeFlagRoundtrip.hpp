@@ -8,9 +8,9 @@
 
 namespace djinni_generated {
 
-class NativeFlagRoundtrip final : ::djinni::JniInterface<::FlagRoundtrip, NativeFlagRoundtrip> {
+class NativeFlagRoundtrip final : ::djinni::JniInterface<::testsuite::FlagRoundtrip, NativeFlagRoundtrip> {
 public:
-    using CppType = std::shared_ptr<::FlagRoundtrip>;
+    using CppType = std::shared_ptr<::testsuite::FlagRoundtrip>;
     using JniType = jobject;
 
     using Boxed = NativeFlagRoundtrip;
@@ -23,7 +23,7 @@ public:
 private:
     NativeFlagRoundtrip();
     friend ::djinni::JniClass<NativeFlagRoundtrip>;
-    friend ::djinni::JniInterface<::FlagRoundtrip, NativeFlagRoundtrip>;
+    friend ::djinni::JniInterface<::testsuite::FlagRoundtrip, NativeFlagRoundtrip>;
 
 };
 

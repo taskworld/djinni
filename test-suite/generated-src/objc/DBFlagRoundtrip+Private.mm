@@ -13,51 +13,49 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
 
 @interface DBFlagRoundtrip ()
 
-@property (nonatomic, readonly) ::djinni::DbxCppWrapperCache<::FlagRoundtrip>::Handle cppRef;
-
-- (id)initWithCpp:(const std::shared_ptr<::FlagRoundtrip>&)cppRef;
+- (id)initWithCpp:(const std::shared_ptr<::testsuite::FlagRoundtrip>&)cppRef;
 
 @end
 
-@implementation DBFlagRoundtrip
+@implementation DBFlagRoundtrip {
+    ::djinni::CppProxyCache::Handle<std::shared_ptr<::testsuite::FlagRoundtrip>> _cppRefHandle;
+}
 
-- (id)initWithCpp:(const std::shared_ptr<::FlagRoundtrip>&)cppRef
+- (id)initWithCpp:(const std::shared_ptr<::testsuite::FlagRoundtrip>&)cppRef
 {
     if (self = [super init]) {
-        _cppRef.assign(cppRef);
+        _cppRefHandle.assign(cppRef);
     }
     return self;
 }
 
 + (DBAccessFlags)roundtripAccess:(DBAccessFlags)flag {
     try {
-        auto r = ::FlagRoundtrip::roundtrip_access(::djinni::Enum<::access_flags, DBAccessFlags>::toCpp(flag));
-        return ::djinni::Enum<::access_flags, DBAccessFlags>::fromCpp(r);
+        auto r = ::testsuite::FlagRoundtrip::roundtrip_access(::djinni::Enum<::testsuite::access_flags, DBAccessFlags>::toCpp(flag));
+        return ::djinni::Enum<::testsuite::access_flags, DBAccessFlags>::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 + (DBEmptyFlags)roundtripEmpty:(DBEmptyFlags)flag {
     try {
-        auto r = ::FlagRoundtrip::roundtrip_empty(::djinni::Enum<::empty_flags, DBEmptyFlags>::toCpp(flag));
-        return ::djinni::Enum<::empty_flags, DBEmptyFlags>::fromCpp(r);
+        auto r = ::testsuite::FlagRoundtrip::roundtrip_empty(::djinni::Enum<::testsuite::empty_flags, DBEmptyFlags>::toCpp(flag));
+        return ::djinni::Enum<::testsuite::empty_flags, DBEmptyFlags>::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 + (nullable NSNumber *)roundtripAccessBoxed:(nullable NSNumber *)flag {
     try {
-        auto r = ::FlagRoundtrip::roundtrip_access_boxed(::djinni::Optional<std::experimental::optional, ::djinni::Enum<::access_flags, DBAccessFlags>>::toCpp(flag));
-        return ::djinni::Optional<std::experimental::optional, ::djinni::Enum<::access_flags, DBAccessFlags>>::fromCpp(r);
+        auto r = ::testsuite::FlagRoundtrip::roundtrip_access_boxed(::djinni::Optional<std::experimental::optional, ::djinni::Enum<::testsuite::access_flags, DBAccessFlags>>::toCpp(flag));
+        return ::djinni::Optional<std::experimental::optional, ::djinni::Enum<::testsuite::access_flags, DBAccessFlags>>::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
 + (nullable NSNumber *)roundtripEmptyBoxed:(nullable NSNumber *)flag {
     try {
-        auto r = ::FlagRoundtrip::roundtrip_empty_boxed(::djinni::Optional<std::experimental::optional, ::djinni::Enum<::empty_flags, DBEmptyFlags>>::toCpp(flag));
-        return ::djinni::Optional<std::experimental::optional, ::djinni::Enum<::empty_flags, DBEmptyFlags>>::fromCpp(r);
+        auto r = ::testsuite::FlagRoundtrip::roundtrip_empty_boxed(::djinni::Optional<std::experimental::optional, ::djinni::Enum<::testsuite::empty_flags, DBEmptyFlags>>::toCpp(flag));
+        return ::djinni::Optional<std::experimental::optional, ::djinni::Enum<::testsuite::empty_flags, DBEmptyFlags>>::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
-
-@end
 
 namespace djinni_generated {
 
@@ -66,7 +64,7 @@ auto FlagRoundtrip::toCpp(ObjcType objc) -> CppType
     if (!objc) {
         return nullptr;
     }
-    return objc.cppRef.get();
+    return objc->_cppRefHandle.get();
 }
 
 auto FlagRoundtrip::fromCpp(const CppType& cpp) -> ObjcType
@@ -74,9 +72,9 @@ auto FlagRoundtrip::fromCpp(const CppType& cpp) -> ObjcType
     if (!cpp) {
         return nil;
     }
-    return ::djinni::DbxCppWrapperCache<::FlagRoundtrip>::getInstance()->get(cpp, [] (const CppType& p) {
-        return [[DBFlagRoundtrip alloc] initWithCpp:p];
-    });
+    return ::djinni::get_cpp_proxy<DBFlagRoundtrip>(cpp);
 }
 
 }  // namespace djinni_generated
+
+@end

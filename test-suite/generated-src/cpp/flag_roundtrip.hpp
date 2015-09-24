@@ -7,6 +7,8 @@
 #include "empty_flags.hpp"
 #include <experimental/optional>
 
+namespace testsuite {
+
 class FlagRoundtrip {
 public:
     virtual ~FlagRoundtrip() {}
@@ -19,3 +21,5 @@ public:
 
     static std::experimental::optional<empty_flags> roundtrip_empty_boxed(std::experimental::optional<empty_flags> flag);
 };
+
+}  // namespace testsuite

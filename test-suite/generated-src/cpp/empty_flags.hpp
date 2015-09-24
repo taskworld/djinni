@@ -5,6 +5,8 @@
 
 #include <functional>
 
+namespace testsuite {
+
 enum class empty_flags : unsigned {
     NONE = 0,
     ALL = 0,
@@ -31,11 +33,13 @@ constexpr empty_flags operator~(empty_flags x) noexcept {
     return static_cast<empty_flags>(~static_cast<unsigned>(x));
 }
 
+}  // namespace testsuite
+
 namespace std {
 
 template <>
-struct hash<::empty_flags> {
-    size_t operator()(::empty_flags type) const {
+struct hash<::testsuite::empty_flags> {
+    size_t operator()(::testsuite::empty_flags type) const {
         return std::hash<unsigned>()(static_cast<unsigned>(type));
     }
 };

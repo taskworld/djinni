@@ -11,11 +11,7 @@ public abstract class UserToken {
     @Nonnull
     public abstract String whoami();
 
-<<<<<<< HEAD:test-suite/generated-src/java/com/dropbox/djinni/test/Token.java
-    public static final class CppProxy extends Token
-=======
-    private static final class CppProxy extends UserToken
->>>>>>> upstream/master:test-suite/generated-src/java/com/dropbox/djinni/test/UserToken.java
+    public static final class CppProxy extends UserToken
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);

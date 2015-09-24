@@ -5,6 +5,8 @@
 
 #include <functional>
 
+namespace testsuite {
+
 enum class access_flags : unsigned {
     NOBODY = 0,
     OWNER_READ = 1 << 0,
@@ -40,11 +42,13 @@ constexpr access_flags operator~(access_flags x) noexcept {
     return static_cast<access_flags>(~static_cast<unsigned>(x));
 }
 
+}  // namespace testsuite
+
 namespace std {
 
 template <>
-struct hash<::access_flags> {
-    size_t operator()(::access_flags type) const {
+struct hash<::testsuite::access_flags> {
+    size_t operator()(::testsuite::access_flags type) const {
         return std::hash<unsigned>()(static_cast<unsigned>(type));
     }
 };

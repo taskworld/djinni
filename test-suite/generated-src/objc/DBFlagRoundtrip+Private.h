@@ -13,7 +13,7 @@ namespace djinni_generated {
 class FlagRoundtrip
 {
 public:
-    using CppType = std::shared_ptr<::FlagRoundtrip>;
+    using CppType = std::shared_ptr<::testsuite::FlagRoundtrip>;
     using ObjcType = DBFlagRoundtrip*;
 
     using Boxed = FlagRoundtrip;

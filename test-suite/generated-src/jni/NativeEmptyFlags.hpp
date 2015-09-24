@@ -10,7 +10,7 @@ namespace djinni_generated {
 
 class NativeEmptyFlags final : ::djinni::JniFlags {
 public:
-    using CppType = ::empty_flags;
+    using CppType = ::testsuite::empty_flags;
     using JniType = jobject;
 
     using Boxed = NativeEmptyFlags;

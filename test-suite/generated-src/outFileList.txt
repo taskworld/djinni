@@ -155,15 +155,10 @@ djinni-output-temp/objc/DBTestHelpers+Private.h
 djinni-output-temp/objc/DBTestHelpers+Private.mm
 djinni-output-temp/objc/DBEmptyRecord+Private.h
 djinni-output-temp/objc/DBEmptyRecord+Private.mm
-<<<<<<< HEAD
-djinni-output-temp/objc/DBToken+Private.h
-djinni-output-temp/objc/DBToken+Private.mm
-djinni-output-temp/objc/DBFlagRoundtrip+Private.h
-djinni-output-temp/objc/DBFlagRoundtrip+Private.mm
-=======
 djinni-output-temp/objc/DBUserToken+Private.h
 djinni-output-temp/objc/DBUserToken+Private.mm
->>>>>>> upstream/master
+djinni-output-temp/objc/DBFlagRoundtrip+Private.h
+djinni-output-temp/objc/DBFlagRoundtrip+Private.mm
 djinni-output-temp/objc/DBClientReturnedRecord+Private.h
 djinni-output-temp/objc/DBClientReturnedRecord+Private.mm
 djinni-output-temp/objc/DBClientInterface+Private.h
