@@ -6,6 +6,8 @@
 #include <chrono>
 #include <utility>
 
+namespace testsuite {
+
 struct RecordWithDurationAndDerivings final {
     std::chrono::duration<double, std::nano> dt;
 
@@ -22,3 +24,5 @@ struct RecordWithDurationAndDerivings final {
     : dt(std::move(new_dt))
     {}
 };
+
+}  // namespace testsuite

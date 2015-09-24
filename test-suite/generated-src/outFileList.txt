@@ -12,7 +12,7 @@ djinni-output-temp/cpp/assorted_primitives.hpp
 djinni-output-temp/cpp/assorted_primitives.cpp
 djinni-output-temp/cpp/test_helpers.hpp
 djinni-output-temp/cpp/empty_record.hpp
-djinni-output-temp/cpp/token.hpp
+djinni-output-temp/cpp/user_token.hpp
 djinni-output-temp/cpp/color.hpp
 djinni-output-temp/cpp/access_flags.hpp
 djinni-output-temp/cpp/empty_flags.hpp
@@ -38,7 +38,7 @@ djinni-output-temp/java/ConstantsInterface.java
 djinni-output-temp/java/AssortedPrimitives.java
 djinni-output-temp/java/TestHelpers.java
 djinni-output-temp/java/EmptyRecord.java
-djinni-output-temp/java/Token.java
+djinni-output-temp/java/UserToken.java
 djinni-output-temp/java/Color.java
 djinni-output-temp/java/AccessFlags.java
 djinni-output-temp/java/EmptyFlags.java
@@ -71,8 +71,8 @@ djinni-output-temp/jni/NativeTestHelpers.hpp
 djinni-output-temp/jni/NativeTestHelpers.cpp
 djinni-output-temp/jni/NativeEmptyRecord.hpp
 djinni-output-temp/jni/NativeEmptyRecord.cpp
-djinni-output-temp/jni/NativeToken.hpp
-djinni-output-temp/jni/NativeToken.cpp
+djinni-output-temp/jni/NativeUserToken.hpp
+djinni-output-temp/jni/NativeUserToken.cpp
 djinni-output-temp/jni/NativeColor.hpp
 djinni-output-temp/jni/NativeAccessFlags.hpp
 djinni-output-temp/jni/NativeEmptyFlags.hpp
@@ -114,7 +114,7 @@ djinni-output-temp/objc/DBAssortedPrimitives.mm
 djinni-output-temp/objc/DBTestHelpers.h
 djinni-output-temp/objc/DBEmptyRecord.h
 djinni-output-temp/objc/DBEmptyRecord.mm
-djinni-output-temp/objc/DBToken.h
+djinni-output-temp/objc/DBUserToken.h
 djinni-output-temp/objc/DBColor.h
 djinni-output-temp/objc/DBAccessFlags.h
 djinni-output-temp/objc/DBEmptyFlags.h
@@ -155,10 +155,15 @@ djinni-output-temp/objc/DBTestHelpers+Private.h
 djinni-output-temp/objc/DBTestHelpers+Private.mm
 djinni-output-temp/objc/DBEmptyRecord+Private.h
 djinni-output-temp/objc/DBEmptyRecord+Private.mm
+<<<<<<< HEAD
 djinni-output-temp/objc/DBToken+Private.h
 djinni-output-temp/objc/DBToken+Private.mm
 djinni-output-temp/objc/DBFlagRoundtrip+Private.h
 djinni-output-temp/objc/DBFlagRoundtrip+Private.mm
+=======
+djinni-output-temp/objc/DBUserToken+Private.h
+djinni-output-temp/objc/DBUserToken+Private.mm
+>>>>>>> upstream/master
 djinni-output-temp/objc/DBClientReturnedRecord+Private.h
 djinni-output-temp/objc/DBClientReturnedRecord+Private.mm
 djinni-output-temp/objc/DBClientInterface+Private.h

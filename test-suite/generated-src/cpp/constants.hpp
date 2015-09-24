@@ -8,8 +8,12 @@
 #include <string>
 #include <utility>
 
+namespace testsuite {
+
+/** Record containing constants */
 struct Constants final {
 
+    /** bool_constant has documentation. */
     static bool const BOOL_CONSTANT;
 
     static int8_t const I8_CONSTANT;
@@ -22,6 +26,11 @@ struct Constants final {
 
     static float const F32_CONSTANT;
 
+    /**
+     * f64_constant has long documentation.
+     * (Second line of multi-line documentation.
+     *   Indented third line of multi-line documentation.)
+     */
     static double const F64_CONSTANT;
 
     static std::string const STRING_CONSTANT;
@@ -38,3 +47,5 @@ struct Constants final {
     , some_string(std::move(new_some_string))
     {}
 };
+
+}  // namespace testsuite

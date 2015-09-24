@@ -27,3 +27,6 @@ DerivedData
 
 # djinni output directories
 djinni-output-temp/
+
+# intellij-plugin build artifact
+intellij-plugin/djinni.jar

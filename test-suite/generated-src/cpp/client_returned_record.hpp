@@ -8,6 +8,9 @@
 #include <string>
 #include <utility>
 
+namespace testsuite {
+
+/** Record returned by a client */
 struct ClientReturnedRecord final {
     int64_t record_id;
     std::string content;
@@ -21,3 +24,5 @@ struct ClientReturnedRecord final {
     , misc(std::move(new_misc))
     {}
 };
+
+}  // namespace testsuite
