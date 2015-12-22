@@ -67,7 +67,12 @@ JNIEnv * jniGetThreadEnv() {
     // PSPDFKIT
     // Attach thread if it's not attached.
     if (get_res == JNI_EDETACHED) {
+        // *sigh* NDK jni.h has a different datatype from desktop one.
+#ifdef __ANDROID__
         get_res = g_cachedJVM->AttachCurrentThreadAsDaemon(&env, nullptr);
+#else
+        get_res = g_cachedJVM->AttachCurrentThreadAsDaemon(reinterpret_cast<void**>(&env), nullptr);
+#endif
         pthread_setspecific(detach_thread_key, env);
     }
     // PSPDFKIT
