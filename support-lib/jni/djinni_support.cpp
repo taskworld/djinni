@@ -28,6 +28,14 @@ namespace djinni {
 // Set only once from JNI_OnLoad before any other JNI calls, so no lock needed.
 static JavaVM * g_cachedJVM;
 
+// PSPDFKit - Helper to detach a current thread when it goes out of scope.
+static pthread_key_t detach_thread_key;
+
+static void detach_current_thread (void *env) {
+    g_cachedJVM->DetachCurrentThread();
+}
+// PSPDFKit
+
 void jniInit(JavaVM * jvm) {
     g_cachedJVM = jvm;
 
@@ -35,11 +43,16 @@ void jniInit(JavaVM * jvm) {
         for (const auto & kv : JniClassInitializer::Registration::get_all()) {
             kv.second->init();
         }
+
     } catch (const std::exception & e) {
         // Default exception handling only, since non-default might not be safe if init
         // is incomplete.
         jniDefaultSetPendingFromCurrent(jniGetThreadEnv(), __func__);
     }
+
+    // PSPDFKIT
+    pthread_key_create(&detach_thread_key, detach_current_thread);
+    // PSPDFKIT
 }
 
 void jniShutdown() {
@@ -49,13 +62,15 @@ void jniShutdown() {
 JNIEnv * jniGetThreadEnv() {
     assert(g_cachedJVM);
     JNIEnv * env = nullptr;
-    const jint get_res = g_cachedJVM->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6);
+    jint get_res = g_cachedJVM->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6);
 
-    // PSPDFKit change - Attach thread if it's not attached so we can do callbacks from libdispatch.
+    // PSPDFKIT
+    // Attach thread if it's not attached.
     if (get_res == JNI_EDETACHED) {
         get_res = g_cachedJVM->AttachCurrentThreadAsDaemon(&env, nullptr);
+        pthread_setspecific(detach_thread_key, env);
     }
-    // PSPDFKit change
+    // PSPDFKIT
 
     if (get_res != 0 || !env) {
         // :(
